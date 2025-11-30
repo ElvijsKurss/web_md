@@ -1,0 +1,115 @@
+/* Vispārīgais css */
+body {
+  padding: 0rem 2rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+p {
+  padding: 0 1rem;
+}
+
+/* Header css */
+nav {
+  text-align: center;
+  background-color: #57595b;
+  padding: 1rem;
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  margin: 0;
+}
+
+.logo {
+  width: 7rem;
+  height: 7rem;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+h2 {
+  font-size: 1rem;
+  color: rgb(107, 69, 48);
+  padding: 0 0 1rem 0;
+}
+
+h3 {
+  padding: 0 1rem;
+}
+.flex-item {
+  flex: 33.3%;
+  text-align: center;
+}
+
+/* Galvenais saturs */
+
+#main-content {
+  display: flex;
+  border: 1px solid red;
+  flex: 100%;
+  #col-one {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    flex: 50%;
+  }
+  #col-two {
+    border: 1px solid green;
+    display: flex;
+    flex: 50%;
+  }
+}
+
+#pic-one {
+  max-width: 100%;
+}
+
+/* Footer saturs */
+
+footer {
+  background-color: #57595b;
+  display: flex;
+  justify-content: center;
+}
+
+#footer-body {
+  display: grid;
+  #footer-top {
+    #footer-ikonas {
+      border: 1px solid purple;
+    }
+    #rekviziti {
+      border: 1px solid red;
+    }
+  }
+  #footer-teksts {
+    border: 1px solid black;
+  }
+}
+
+.social-icons {
+  max-width: 2rem;
+}
+
+#language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .lang-par {
+    padding: 0.3rem;
+  }
+  .LV {
+    background-color: rgb(255, 205, 147);
+  }
+}
