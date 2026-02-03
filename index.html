@@ -1,124 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skeitborda skolas lapa</title>
-    <link href="style.css" rel="stylesheet" />
+    <title>Skeitborda skola Grind</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div id="header">
-            <div class="flex-item"><img class="logo" src="/logo.png"></div>
-            <div class="flex-item">
+
+    <header class="site-header">
+        <div class="header-container">
+            <img class="logo" src="logo.png" alt="Grind logo">
+
+            <div class="header-text">
                 <h1>Skeitborda skola "Grind"</h1>
-                <h2>
-                    Iespējams, labākā skeita skola Rīgā
-                </h2>
+                <h2>Iespējams, labākā skeita skola Rīgā</h2>
             </div>
-            <div class="flex-item">
-                <div id="language">
-                    <p class="lang-par LV">LV</p>
-                    <p class="lang-par EN">EN</p>
+
+            <div class="header-extra">
+                <div class="language">
+                    <a href="index.html" class="lang active">LV</a>
+                    <a href="index.html" class="lang">EN</a>
                 </div>
-                <div>
-                    <img class="social-icons" src="facebook.png" />
-                    <img class="social-icons" src="twitter.png" />
-                    <img class="social-icons" src="instagram.png" />
+
+                <div class="social">
+                    <a href="index.html"><img src="facebook.png" alt="Facebook" class="web-icon"></a>
+                    <a href="index.html"><img src="twitter.png" alt="Twitter" class="web-icon"></a>
+                    <a href="index.html"><img src="instagram.png" alt="Instagram" class="web-icon"></a>
                 </div>
             </div>
         </div>
     </header>
-    <nav>
-        <ul id="nav-list">
-            <li><a class="links">Jaunumi</a></li>
-            <li><a class="links">Akcijas</a></li>
-            <li><a class="links">Pieteikties</a></li>
-            <li><a class="links">Kontakti</a></li>
+
+    <nav class="main-nav">
+        <ul>
+            <li class="nav-link"><a href="index.html">Jaunumi</a></li>
+            <li class="nav-link"><a href="index.html">Akcijas</a></li>
+            <li class="nav-link"><a href="index.html">Pieteikties</a></li>
+            <li class="nav-link"><a href="index.html">Kontakti</a></li>
         </ul>
     </nav>
-    <div id="main-content">
-        <div id="col-one">
-            <div id="col-one-content"><img id="pic-one" src="skate_1.jpg"></div>
-            <div>
-                <h1>Skeitbords kā dzīvesveids</h1>
-                <p>Skeitbords nav tikai sports — tas ir dzīvesveids, kas apvieno radošumu, kustību un brīvību. Ikviens
-                    brauciens sniedz unikālu pieredzi un izaicinājumus, kas palīdz jauniešiem attīstīt neatlaidību un
-                    pašdisciplīnu. Skeitbords dod iespēju izpausties gan kustībā, gan stilā, tāpēc tas bieži kļūst par
-                    daļu no personīgās identitātes.</p>
-            </div>
-        </div>
-        <div id="col-two">
-            <div id="col-two-frame">
-                <div class="col-two-container">
-                    <div class="col-two-img"></div>
-                    <div class="col-two-text">
-                        <h1>Drošība skeitparkā</h1>
-                        <p>Lai skeitbordošana sagādātu prieku un izvairītos no traumām, drošība ir pirmajā vietā.
-                            Svarīgi izmantot aizsargķiveri, ceļu un elkoņu sargus, kā arī pārliecināties, ka aprīkojums
-                            ir tehniskā kārtībā. Iemācoties kritiena tehniku un cienot citus braucējus, iespējams droši
-                            attīstīt prasmes un justies pārliecinoši uz dēļa.</p>
-                    </div>
-                </div>
-                <div class="col-two-container">
-                    <div class="col-two-img">bilde</div>
-                    <div class="col-two-text">
-                        <h1>Pirmie pamati uz dēļa</h1>
-                        <p>Ikviens skeitbordists sāk ar pamatiem — līdzsvaru, stāju un kustības sajūtu. Pirmie soļi
-                            ietver pareizu kāju novietojumu, lēnu ripināšanos un bremzēšanas tehniku. Šie pamati ir
-                            būtiski, lai vēlāk varētu droši apgūt sarežģītākus trikus un pārvarēt dažādus šķēršļus
-                            skeitparkā.</p>
-                    </div>
-                </div>
-                <div class="col-two-container">
-                    <div class="col-two-img">bilde</div>
-                    <div class="col-two-text">
-                        <h1>Triku apgūšana un progresēšana</h1>
-                        <p>Kad pamati ir apgūti, sākas aizraujošākā daļa — triku mācīšanās. No vienkāršiem ollie līdz
-                            sarežģītākiem flipiem, katrs triks prasa pacietību un atkārtošanu. Skeitborda skolā
-                            skolotāji palīdz saprast biomehāniku un kustību secību, kas ļauj ātrāk progresēt un
-                            izvairīties no sliktiem ieradumiem.</p>
-                    </div>
-                </div>
-                <div class="col-two-container">
-                    <div class="col-two-img">bilde</div>
-                    <div class="col-two-text">
-                        <h1>Kopiena un draudzība</h1>
-                        <p>Skeitparkos veidojas spēcīga kopiena — cilvēki palīdz viens otram, dalās padomos un atbalsta
-                            progresā. Šī vide veicina draudzību un sadarbību, jo skeitbords apvieno dažāda vecuma un
-                            pieredzes braucējus. Kopiena ir tā, kas padara skeitbordu īpašu, jo tajā valda savstarpējs
-                            respekts un iedvesma.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div id="footer-body">
-            <div id="footer-top">
-                <div id="footer-ikonas">
-                    <img class="social-icons" src="facebook.png" />
-                    <img class="social-icons" src="twitter.png" />
-                    <img class="social-icons" src="instagram.png" />
-                </div>
-                <div id="rekviziti">
-                    <h3>Rekvizīti:</h3>
-                    <p>SIA "GRIND", Skeita ielā 420, Lielpilsēta, LV-0001, Latvija</p>
-                    <p>LV40000000000, AS VoidBank, SWIFT: VOIDLV99, LV99VOID0123456789001
+
+    <main class="content">
+
+        <section class="left-column">
+            <img src="skate_1.jpg" alt="Skeitbordists parkā">
+
+            <h2>Skeitbords kā dzīvesveids</h2>
+            <p class="main-text">
+                Skeitbords nav tikai sports — tas ir dzīvesveids, kas apvieno radošumu,
+                kustību un brīvību. Tas attīsta neatlaidību, pašdisciplīnu un
+                pašizpausmi.
+            </p>
+        </section>
+
+        <section class="right-column">
+
+            <article class="info-block">
+                <img src="skate (4).jpg" alt="Drošība skeitparkā">
+                <div>
+                    <h3 class="sub-header">Drošība skeitparkā</h3>
+                    <p class="main-text">
+                        Drošība ir pirmajā vietā — ķivere, sargi un cieņa pret citiem braucējiem palīdz izvairīties no
+                        traumām.
+                        Papildus tam ir svarīgi izvērtēt savas prasmes un neuzsākt trikus, kuri vēl nav atbilstoši tavām
+                        spējām.
                     </p>
+                    <p class="extra-info">Uzzināt vairāk...</p>
                 </div>
+            </article>
+
+            <article class="info-block">
+                <img src="skate (3).jpg" alt="Skeitborda pamati">
+                <div>
+                    <h3 class="sub-header">Pirmie pamati</h3>
+                    <p class="main-text">
+                        Līdzsvars, stāja un bremzēšana ir pamats veiksmīgai progresēšanai.
+                        Šo iemaņu apgūšana padara braukšanu drošāku un palīdz justies pārliecinātāk uz dēļa.
+                    </p>
+                    <p class="extra-info">Uzzināt vairāk...</p>
+                </div>
+            </article>
+
+            <article class="info-block">
+                <img src="skate (1).jpg" alt="Skeitborda triki">
+                <div>
+                    <h3 class="sub-header">Triku apgūšana</h3>
+                    <p class="main-text">
+                        No ollie līdz flipiem — pacietība un atkārtošana ved uz progresu.
+                        Regulāri treniņi un kļūdu analīze palīdz uzlabot tehniku un sasniegt stabilus rezultātus.
+                    </p>
+                    <p class="extra-info">Uzzināt vairāk...</p>
+                </div>
+            </article>
+
+            <article class="info-block">
+                <img src="skate (2).jpg" alt="Skeitborda kopiena">
+                <div>
+                    <h3 class="sub-header">Kopiena</h3>
+                    <p>
+                        Skeitbords apvieno dažādu vecumu cilvēkus draudzīgā un atbalstošā vidē.
+                        Dalīšanās pieredzē un savstarpējs iedrošinājums motivē attīstīties un baudīt procesu vēl vairāk.
+                    </p>
+                    <p class="extra-info">Uzzināt vairāk...</p>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="social">
+                <a href="index.html" class="footer-logo"><img src="facebook.png" alt="Facebook" class="web-icon"></a>
+                <a href="index.html" class="footer-logo"><img src="twitter.png" alt="Twitter" class="web-icon"></a>
+                <a href="index.html" class="footer-logo"><img src="instagram.png" alt="Instagram" class="web-icon"></a>
             </div>
 
-            <div id="footer-teksts">
-                <p>Mājasdarba materiāls. Attēli aizgūti no internet resursiem tikai mācību nolūkiem. Teksti ģenerēti
-                    izmantojo ChatGPT.
-                    Sagatavoja Elvijs Kurss. Ekonomikas un
-                    kultūras augstskola. 2025. g.</p>
+            <div class="requisites">
+                <h3>Rekvizīti</h3>
+                <p>SIA "GRIND", Skeita iela 420, LV-0001</p>
+                <p>LV40000000000, AS VoidBank</p>
             </div>
         </div>
+
+        <p class="footer-note">
+            Metodiskais materiāls. Attēli un teksti aizgūti no internet resursiem tikai mācību nolūkiem.
+            Mājasdarba materiāls. Attēli un teksti izmantoti mācību nolūkiem.
+            Sagatavoja Elvijs Kurss, EKA, 2025.
+        </p>
     </footer>
+
 </body>
 
 </html>
