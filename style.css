@@ -1,5 +1,6 @@
-/* Vispārīgie iestatījumi */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -10,31 +11,9 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
-.site-header {
-  padding: 1rem;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo {
-  width: 6rem;
-}
-
-.header-text {
-  flex: 1;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-}
-
 h1 {
-  font-size: 2rem;
   margin: 0;
+  font-size: 2rem;
 }
 
 h2 {
@@ -48,16 +27,54 @@ p {
   padding: 0;
 }
 
+.main-text {
+  text-align: justify;
+}
+
+.sub-header {
+  padding: 0.5rem 0;
+  color: #57595b;
+}
+
+.site-header {
+  padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.header-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
 .language {
   display: flex;
-  gap: 0.5rem;
   justify-content: center;
+  gap: 0.5rem;
   padding: 1.5rem 0;
 }
 
 .lang {
-  text-decoration: none;
   padding: 0.3rem 0.6rem;
+  text-decoration: none;
   background-color: #ddd;
   color: #000;
 }
@@ -66,30 +83,55 @@ p {
   background-color: #ffcd93;
 }
 
-/* Navigācija */
+.extra-info {
+  display: flex;
+  justify-content: flex-end;
+  color: red;
+  font-size: 0.8rem;
+}
+
 .main-nav {
   background-color: #57595b;
 }
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+.nav-container .nav-link {
+  justify-content: center;
+  display: flex;
+}
 
 .main-nav ul {
+  margin: 0;
+  padding: 0.5rem;
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 0.5rem;
-  margin: 0;
 }
 
 .main-nav a {
-  color: white;
-  text-decoration: none;
   margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Galvenais saturs */
+.nav-link a {
+  display: inline-block;
+  transition:
+    color 0.4s ease,
+    transform 0.4s ease-out;
+}
+
+.nav-link a:hover {
+  color: rgb(190, 188, 28);
+  transform: scale(1.05);
+}
+
 .content {
   display: flex;
-  padding: 1rem;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .left-column,
@@ -101,11 +143,12 @@ p {
   width: 100%;
 }
 
+/* Info bloki */
 .info-block {
-  display: flex;
-  gap: 1rem;
   margin-bottom: 1rem;
+  display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .info-block img {
@@ -113,17 +156,14 @@ p {
   height: auto;
   object-fit: cover;
 }
+
 .info-block > div {
   width: 50%;
 }
-.info-block h3 {
-  margin-top: 0;
-}
 
-/* Footer */
 .site-footer {
   background-color: #57595b;
-  color: white;
+  color: #fff;
   padding: 1rem;
 }
 
@@ -132,17 +172,38 @@ p {
   flex-direction: row;
 }
 
+/* Sociālās ikonas */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.web-icon {
+  max-width: 2.7rem;
+  padding: 0 0.3rem;
+}
+
+.requisites {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-note {
-  font-size: 0.8rem;
   margin-top: 1rem;
   margin-left: 1rem;
+  font-size: 0.8rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
   .header-container,
   .content,
-  .footer-top {
+  .footer-top,
+  .nav-container {
     flex-direction: column;
   }
 
@@ -151,56 +212,15 @@ p {
     align-items: center;
     text-align: center;
   }
+
+  .info-block img,
+  .info-block > div {
+    width: 100%;
+  }
 }
 
-.header-extra {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5rem;
-}
-.requisites {
-  flex-direction: column;
-}
-.footer-note {
+#logo-container {
+  flex: 1;
   display: flex;
   justify-content: center;
-}
-
-.web-icon {
-  max-width: 2.7rem;
-  padding: 0 0.3rem;
-}
-
-.nav-link a {
-  transition:
-    color 0.4s ease,
-    transform 0.4s ease-out;
-  display: inline-block;
-}
-
-.nav-link a:hover {
-  color: rgb(190, 188, 28);
-  transform: scale(1.05);
-}
-
-.extra-info {
-  color: red;
-  display: flex;
-  justify-content: right;
-  font-size: 0.8rem;
-}
-
-.main-text {
-  text-align: justify;
-}
-
-.sub-header {
-  padding: 0.5rem 0;
-  color: #57595b;
 }
